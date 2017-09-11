@@ -16,5 +16,4 @@ private:
 	GameScreen gameScreen;
 	Player* player;
 	GameObject* wall;
-	GameObject* bullet;
 };

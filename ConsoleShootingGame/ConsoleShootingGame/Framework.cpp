@@ -24,6 +24,7 @@ void Framework::Start(){
 void Framework::Update(){
 	Input();
 	DrawObject();
+
 	player->BulletMove(gameScreen);
 }
 
