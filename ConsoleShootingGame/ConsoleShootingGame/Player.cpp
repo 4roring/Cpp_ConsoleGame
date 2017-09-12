@@ -6,6 +6,8 @@ Player::Player(int x, int y) : GameObject(x, y){
 	height = 1;
 
 	reload = true;
+	HP = 50;
+	Score = 0;
 
 	for(int i=0;i<20;i++)
 		bullet[i] = NULL;

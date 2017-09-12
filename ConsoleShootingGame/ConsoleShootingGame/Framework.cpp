@@ -50,6 +50,10 @@ void Framework::Input(){
 }
 
 void Framework::DrawObject(){
+	char ScoreUI[50];
+	sprintf(ScoreUI, "Score : %d                    HP : %d", player->Get_Score(), player->Get_HP());
+	gameScreen.DrawBackBuffer(2, 0, ScoreUI); 
+
 	for(int i=0;i<gameScreen.GetScrHeight();i++){
 		gameScreen.DrawBackBuffer(0, i, wall->Get_Image());
 		gameScreen.DrawBackBuffer(gameScreen.GetScrWidth()-1, i, wall->Get_Image());
