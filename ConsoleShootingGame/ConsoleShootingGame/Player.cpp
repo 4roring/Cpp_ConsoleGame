@@ -27,11 +27,20 @@ void Player::BulletMove(GameScreen& scr){
 	for(int i=0;i<20;i++){
 		if(bullet[i] != NULL){
 			bullet[i]->Set_Y(bullet[i]->Get_Y()+1);
+			if(scr.GetScrData(bullet[i]->Get_X(), bullet[i]->Get_Y()) == 'e'){
+				scr.DrawBackBuffer(bullet[i]->Get_X(), bullet[i]->Get_Y(), "*");
+				delete bullet[i];
+				bullet[i] = NULL;
+				Score += 100;
+				break;
+			}
+			
 			scr.DrawBackBuffer(bullet[i]->Get_X(), bullet[i]->Get_Y(), bullet[i]->Get_Image());
 			if(bullet[i]->Get_Y() > scr.GetScrHeight()-2){
 				scr.DrawBackBuffer(bullet[i]->Get_X(), bullet[i]->Get_Y(), " ");
 				delete bullet[i];
 				bullet[i] = NULL;
+				break;
 			}
 		}	
 	}

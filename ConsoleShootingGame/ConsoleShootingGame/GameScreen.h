@@ -4,14 +4,15 @@
 
 class GameScreen{
 public:
-	GameScreen():SCR_HEIGHT(20), SCR_WIDTH(40){ InitlizeScreen();};
+	GameScreen():SCR_HEIGHT(20), SCR_WIDTH(40){ InitlizeScreen(); }
 	~GameScreen();
 	void InitlizeScreen();
 	void Gotoxy(const int x, const int y);
 	void DrawBackBuffer(const int x, const int y, char* image);
 	void Render();
-	const int GetScrHeight() { return SCR_HEIGHT; }
-	const int GetScrWidth() { return SCR_WIDTH; }
+	int GetScrHeight() const { return SCR_HEIGHT; }
+	int GetScrWidth() const { return SCR_WIDTH; }
+	char GetScrData(int x, int y) const { return backBuffer[y][x]; }
 
 private:
 	const int SCR_HEIGHT, SCR_WIDTH;

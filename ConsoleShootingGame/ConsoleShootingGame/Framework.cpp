@@ -60,4 +60,5 @@ void Framework::DrawObject(){
 	}
 
 	gameScreen.DrawBackBuffer(player->Get_X(), player->Get_Y(), player->Get_Image());
+	gameScreen.DrawBackBuffer(10, 10, "e");
 }

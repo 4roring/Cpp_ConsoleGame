@@ -3,7 +3,7 @@
 
 class GameObject{
 public:
-	GameObject(){};
+	GameObject(){}
 	GameObject(int x, int y):x(x),y(y){};
 	GameObject(int x, int y, char* image):x(x), y(y), image(image){};
 	~GameObject(){}

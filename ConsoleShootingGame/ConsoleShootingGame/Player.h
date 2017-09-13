@@ -4,9 +4,9 @@
 
 class Player : public GameObject {
 public:
-	Player() : GameObject(){};
+	Player() : GameObject(){}
 	Player(int x, int y);
-	~Player(){};
+	~Player(){}
 
 	int Get_HP() const { return HP; }
 	int Get_Score() const { return Score; }
