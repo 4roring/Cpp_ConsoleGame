@@ -74,6 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Framework.cpp" />
     <ClCompile Include="GameScreen.cpp" />
     <ClCompile Include="main.cpp" />

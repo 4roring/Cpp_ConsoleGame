@@ -1,14 +1,19 @@
-﻿빌드 시작: 2017-09-13 오전 11:10:21
+﻿빌드 시작: 2017-09-14 오후 10:34:26
      1>2 노드의 "E:\Project\C++\C++GameProject\ConsoleShootingGame\ConsoleShootingGame\ConsoleShootingGame.vcxproj" 프로젝트(build 대상)입니다.
      1>InitializeBuildStatus:
          "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\ConsoleShootingGame.unsuccessfulbuild"을(를) 만들고 있습니다.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Player.cpp
-         Player.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Framework.cpp
+         Framework.cpp
+     1>e:\project\c++\c++gameproject\consoleshootinggame\consoleshootinggame\framework.cpp(7): warning C4244: '인수' : 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>e:\project\c++\c++gameproject\consoleshootinggame\consoleshootinggame\framework.cpp(26): warning C4154: 배열 식을 삭제했습니다. 포인터로 변환이 제공됩니다.
+     1>e:\project\c++\c++gameproject\consoleshootinggame\consoleshootinggame\framework.cpp(101): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 'sprintf' 선언을 참조하십시오.
        ManifestResourceCompile:
          모든 출력이 최신 상태입니다.
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Project\C++\C++GameProject\ConsoleShootingGame\Debug\ConsoleShootingGame.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ConsoleShootingGame.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Project\C++\C++GameProject\ConsoleShootingGame\Debug\ConsoleShootingGame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Project\C++\C++GameProject\ConsoleShootingGame\Debug\ConsoleShootingGame.lib" /MACHINE:X86 Debug\ConsoleShootingGame.exe.embed.manifest.res
+         Debug\Enemy.obj
          Debug\Framework.obj
          Debug\GameScreen.obj
          Debug\main.obj
@@ -26,4 +31,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:01.67
+경과 시간: 00:00:02.09
