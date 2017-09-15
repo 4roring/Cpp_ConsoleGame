@@ -1,14 +1,19 @@
-﻿빌드 시작: 2017-09-14 오후 10:34:26
+﻿빌드 시작: 2017-09-15 오후 11:24:17
      1>2 노드의 "E:\Project\C++\C++GameProject\ConsoleShootingGame\ConsoleShootingGame\ConsoleShootingGame.vcxproj" 프로젝트(build 대상)입니다.
      1>InitializeBuildStatus:
-         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\ConsoleShootingGame.unsuccessfulbuild"을(를) 만들고 있습니다.
+         "Debug\ConsoleShootingGame.unsuccessfulbuild"에 연결(touching)하고 있습니다.
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Framework.cpp
          Framework.cpp
-     1>e:\project\c++\c++gameproject\consoleshootinggame\consoleshootinggame\framework.cpp(7): warning C4244: '인수' : 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>e:\project\c++\c++gameproject\consoleshootinggame\consoleshootinggame\framework.cpp(26): warning C4154: 배열 식을 삭제했습니다. 포인터로 변환이 제공됩니다.
-     1>e:\project\c++\c++gameproject\consoleshootinggame\consoleshootinggame\framework.cpp(101): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\project\c++\c++gameproject\consoleshootinggame\consoleshootinggame\framework.cpp(20): warning C4244: '인수' : 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>e:\project\c++\c++gameproject\consoleshootinggame\consoleshootinggame\framework.cpp(120): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 'sprintf' 선언을 참조하십시오.
+     1>e:\project\c++\c++gameproject\consoleshootinggame\consoleshootinggame\framework.cpp(204): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' 선언을 참조하십시오.
+     1>e:\project\c++\c++gameproject\consoleshootinggame\consoleshootinggame\framework.cpp(231): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' 선언을 참조하십시오.
+     1>e:\project\c++\c++gameproject\consoleshootinggame\consoleshootinggame\framework.cpp(238): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' 선언을 참조하십시오.
        ManifestResourceCompile:
          모든 출력이 최신 상태입니다.
        Link:
@@ -31,4 +36,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:02.09
+경과 시간: 00:00:01.56

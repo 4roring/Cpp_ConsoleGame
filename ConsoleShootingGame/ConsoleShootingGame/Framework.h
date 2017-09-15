@@ -1,8 +1,15 @@
 #pragma once
+#include <fstream>
+#include <conio.h>
 #include "GameScreen.h"
 #include "GameObject.h"
 #include "Player.h"
 #include "Enemy.h"
+
+typedef struct {
+	int Score;
+	char name[20];
+}Rank;
 
 class Framework{
 public:
@@ -15,6 +22,10 @@ public:
 	void DrawObject();
 	void EnemyStateCheck();
 	void LevelManager();
+	void GameOver();
+	void InitRank();
+	void InsertRank(int Score);
+	void ShowRank();
 
 private:
 	int FrameCount;
@@ -25,4 +36,6 @@ private:
 	Player* player;
 	Enemy* enemy[8];
 	GameObject* wall;
+	Rank rank[5];
+
 };

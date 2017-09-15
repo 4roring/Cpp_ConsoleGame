@@ -50,7 +50,7 @@ void GameScreen::DrawBackBuffer(const int x, const int y, char* image){
 	}
 }
 
-// 전면 버퍼와 후면 버퍼를 비교해서 다른 부분만 다시 이미지 출력
+// 전면 버퍼와 후면 버퍼를 비교해서 다른 부분 이미지만 다시  출력
 void GameScreen::Render(){
 	for(int y=0;y<SCR_HEIGHT;y++)
 		for(int x=0;x<SCR_WIDTH;x++){
