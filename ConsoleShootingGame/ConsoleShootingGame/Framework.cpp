@@ -234,7 +234,7 @@ void Framework::InsertRank(int Score){
 		strcpy(rank[nowRank].name, rankName);
 	}
 	else{
-		for(int i=3;i<nowRank;i--){
+		for(int i=3;i>nowRank;i--){
 			rank[i] = rank[i-1];
 		}
 		rank[nowRank].Score = Score;
@@ -256,7 +256,7 @@ void Framework::ShowRank(){
 	std::cout << " Rank    Score    Name   " << std::endl;
 	
 	for(int i=0;i<5;i++)
-		std::cout << "   " << i << "     " << rank[i].Score << "      " << rank[i].name << std::endl;
+		std::cout << "   " << i+1 << "     " << rank[i].Score << "      " << rank[i].name << std::endl;
 	
 	std::cout << "2초 후 Title로 이동";
 	Sleep(2000);
