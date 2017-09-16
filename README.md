@@ -1,4 +1,5 @@
-### KK1 C++ Console Window Game Programming Repository
+KK1 C++ Console Window Game Programming Repository
+============
 
 다양한 배움을 즐기는 개발자 KK1의 C++ 콘솔 윈도우 게임 프로그래밍 저장소
 
@@ -18,7 +19,7 @@ https://github.com/4roring/Cpp_ConsoleGame/tree/master/ConsoleGame/ConsoleGame
 Console Window ShootingGame
 ------------------------------
 
-![Alt text](/Image/snakeGame.PNG)
+![Alt text](/Image/shootingGame.PNG)
 
 
 https://github.com/4roring/Cpp_ConsoleGame/tree/master/ConsoleShootingGame/ConsoleShootingGame
