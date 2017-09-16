@@ -172,7 +172,7 @@ void Framework::LevelManager(){
 
 // 게임 오버를 1초간 보여주는 기능
 void Framework::GameOver(){
-	gameScreen.Gotoxy(20, 10);
+	gameScreen.Gotoxy(13, 10);
 	std::cout << "Game Over";
 	Sleep(1000);
 	system("cls");
@@ -211,7 +211,6 @@ void Framework::InitRank(){
 }
 
 // 랭킹을 확인하여 삽입 후 랭킹 파일 재작성
-// FIXME : Input에서 발생한 입력들이 랭킹 이름 작성시 남으니 조치를 취해야함
 void Framework::InsertRank(int Score){
 	int nowRank = -1;
 	char rankName[6];
@@ -226,7 +225,7 @@ void Framework::InsertRank(int Score){
 	
 	std::cout << "Score : " << player->Get_Score() << "  Rank : " << nowRank+1 << std::endl;
 	std::cout << "Insert Rank Name(6 char limit) : ";
-	std::cin.clear();
+	FlushConsoleInputBuffer(GetStdHandle(STD_INPUT_HANDLE));
 	std::cin >> rankName;
 
 	if(nowRank == 4){

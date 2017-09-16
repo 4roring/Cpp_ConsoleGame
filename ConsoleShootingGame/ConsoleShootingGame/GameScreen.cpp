@@ -16,6 +16,10 @@ void GameScreen::InitlizeScreen(){
 	cursorInfo.bVisible = false;
 	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursorInfo);
 
+	char cmd[50];
+	sprintf(cmd, "mode con:lines=%d cols=%d", SCR_HEIGHT, SCR_WIDTH);
+	system(cmd);
+
 	frontBuffer = new char*[SCR_HEIGHT];
 	backBuffer = new char*[SCR_HEIGHT];
 
